@@ -1,0 +1,62 @@
+
+a {
+    text-decoration: none;
+}
+
+.add-box {
+    border-color: rgb(171, 184, 126) !important;
+}
+
+
+.task-box {
+    width: 33%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.task-box span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.task-box p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.fire-icon {
+    color: #ff4500;
+    margin-left: 5px;
+    animation: flicker 0.9s infinite alternate;
+    -webkit-animation: flicker 0.9s infinite alternate;
+}
+
+@keyframes flicker {
+    from {
+        filter: drop-shadow(0 0 2px orange);
+        -webkit-filter: drop-shadow(0 0 2px orange);
+    }
+
+    to {
+        filter: drop-shadow(0 0 8px red);
+        -webkit-filter: drop-shadow(0 0 8px red);
+    }
+}
+
+.task-content-box {
+
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}

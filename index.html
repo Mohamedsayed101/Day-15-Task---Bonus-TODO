@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <title>Todo page</title>
+  </head>
+  <body>
+    <div class="container my-4">
+      <header class="mb-4 text-center">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="fs-1 text-muted" id="user-name">Hello,</p>
+          <div>
+            <button class="btn btn-info">
+              <a
+                href="./LoginAndRegsiter.html"
+                class="login link-underline-opacity-0"
+                >Login</a
+              >
+            </button>
+          </div>
+        </div>
+        <h1 class="text-primary">My Todo List</h1>
+        <p class="text-muted">Stay organized and productive</p>
+      </header>
+
+      <div class="add-box border border-3 p-3 rounded-3 mb-3">
+        <div class="mb-3">
+          <label for="task-title" class="form-label">Todo Title</label>
+          <input type="text" id="task-title" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label for="task-description" class="form-label"
+            >Todo Description</label
+          >
+          <input type="text" id="task-description" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100" id="add-task-btn">
+          Add Todo
+        </button>
+      </div>
+
+      <div
+        class="progress my-4"
+        role="progressbar"
+        aria-label="Example with label"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div
+          class="progress-bar bg-danger"
+          style="width: 25%"
+          id="progress-bar"
+        >
+          25%
+        </div>
+      </div>
+
+      <div
+        class="follow-tasks d-flex justify-content-between align-items-center ps-2 pe-2"
+      >
+        <div class="task-box border text-center w-30">
+          <span class="text-primary" id="total-count">0</span>
+          <p>Total Todos</p>
+        </div>
+
+        <div class="task-box border text-center w-30">
+          <span class="text-primary" id="completed-count">0</span>
+          <p>Completed</p>
+        </div>
+
+        <div class="task-box border text-center w-30">
+          <span class="text-primary" id="streak-count">1</span>
+          <p>
+            Day Streak
+            <i class="fas fa-fire fire-icon"></i>
+          </p>
+        </div>
+      </div>
+
+      <div class="mb-5 container mt-3" id="tasks-containter"></div>
+    </div>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/loginAndRegister.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
