@@ -2,7 +2,7 @@
 
 This simple Todo List web application helps users stay organized by allowing them to add, track, and manage tasks easily.It's a task from ITI
 
-## 🚀 Features
+## Features
 
 - Add new todos with a title and description.
 - View a progress bar showing how many tasks are completed.
@@ -13,7 +13,7 @@ This simple Todo List web application helps users stay organized by allowing the
 
 ---
 
-## 🧱 Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
@@ -23,23 +23,32 @@ This simple Todo List web application helps users stay organized by allowing the
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 project-folder/
+
 │
+
 ├── index.html
+
 ├── CSS/
+
 │ ├── bootstrap.min.css
+
 │ └── style.css
+
 ├── JS/
+
 │ ├── bootstrap.min.js
+
 │ ├── loginAndRegister.js
+
 │ └── main.js
 
 ---
 
 
-## ✅ How It Works
+## How It Works
 
 ### 1. **User Interface**
 
@@ -80,7 +89,7 @@ addTaskBtn.addEventListener("click", () => {
 
 ---
 
-## 🧪 Future Improvements
+## Future Improvements
 
 - Add filtering: show all, completed, uncompleted.
 - Add categories or due dates.
