@@ -1,4 +1,4 @@
-//This task made by Mohamed Sayed Omar and he have all copyrigth for it and it owner to act with it 
+//This task made by Mohamed Sayed Omar and he have all copyrigth for it and it owner to act with it
 
 /*
   TODO: Steps to build this To-Do List App
@@ -40,13 +40,12 @@
         Use Bootstrap classes for layout, responsive design, and beautiful UI components (cards, buttons, grid, etc.).
 */
 
-
 // ==== 1. Varaibles ====
 let userData = JSON.parse(localStorage.getItem("userData"));
 let userName = document.querySelector("#user-name");
 
 if (userData && userName) {
-  userName.innerHTML += userData.userName.split(" ").at(0);
+  userName.innerHTML += `Hello, ${userData.userName.split(" ").at(0)}`;
 }
 
 let addTaskBtn = document.getElementById("add-task-btn");
@@ -148,7 +147,7 @@ function renderTasks() {
     "bg-success"
   );
 
-  // add color for all case 
+  // add color for all case
   if (progress <= 30) {
     progressBar.classList.add("bg-danger");
   } else if (progress <= 60) {
@@ -183,6 +182,5 @@ tasksContainter.addEventListener("click", function (e) {
     renderTasks();
   }
 });
-
 
 // والحمدلله

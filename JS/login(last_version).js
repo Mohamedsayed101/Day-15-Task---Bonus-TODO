@@ -55,7 +55,7 @@ document.getElementById("regBtn").addEventListener("click", function (e) {
   const user = { userName, email, password };
   localStorage.setItem("userData", JSON.stringify(user));
 
-  showMessage(messageId, "Registered successfully ✅", "success");
+  showMessage(messageId, "Registered successfully ", "success");
 
   // Switch to login form
   setTimeout(() => {
@@ -98,7 +98,7 @@ document.getElementById("logBtn").addEventListener("click", function (e) {
   }
 
   if (userData.email === email && userData.password === password) {
-    showMessage(messageId, `Welcome back, ${userData.userName.split(" ").at(0)}! ✅`, "success");
+    showMessage(messageId, `Welcome back, ${userData.userName.split(" ").at(0)}! `, "success");
 
     setTimeout(() => {
       window.location.href = "index.html";
