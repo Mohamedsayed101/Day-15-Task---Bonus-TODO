@@ -64,3 +64,26 @@ body {
 .toggle-link {
     cursor: pointer;
 }
+
+/* ================================ */
+/* ================================ */
+
+.message-box {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  display: none;
+}
+
+.message-box.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message-box.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* ================================ */
+/* ================================ */

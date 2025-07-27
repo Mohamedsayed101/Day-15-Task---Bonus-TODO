@@ -42,8 +42,12 @@
 
 
 // ==== 1. Varaibles ====
+let userData = JSON.parse(localStorage.getItem("userData"));
 let userName = document.querySelector("#user-name");
-userName.innerHTML += localStorage.getItem("User Name") || "";
+
+if (userData && userName) {
+  userName.innerHTML += userData.userName.split(" ").at(0);
+}
 
 let addTaskBtn = document.getElementById("add-task-btn");
 let tasksContainter = document.querySelector("#tasks-containter");

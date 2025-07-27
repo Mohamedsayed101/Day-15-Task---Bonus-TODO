@@ -13,12 +13,12 @@ let nameInput = document.getElementById("regName");
 if (nameInput) {
   nameInput.addEventListener("blur", () => {
     localStorage.setItem(
-      "User Name",
+      "userName",
       nameInput.value.trim().split(" ").at(0) || ""
     );
 
     //for testing
-    console.log("User name saved:", localStorage.getItem("User Name"));
+    console.log("User name saved:", localStorage.getItem("userName"));
   });
 }
 
