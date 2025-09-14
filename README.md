@@ -98,6 +98,26 @@ addTaskBtn.addEventListener("click", () => {
 
 ---
 
-**Author:** Mohamed Sayed  
-**Last Updated:** July 2025
+## ⚡ How to Use
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Mohamedsayed101/Day-15-Task---Bonus-TODO
+```
+---
+
+## ✨ Deployment
+
+You can deploy the template easily using:
+
+- [GitHub Pages](https://mohamedsayed101.github.io/Day-15-Task---Bonus-TODO/)  
+- [Netlify](https://todolisjs.netlify.app/)  
+
+---
+
+## 📧 Contact
+
+Created with ❤️ by **[Mohamed Sayed]**.  
+Feel free to fork, customize, and share this template.
 
