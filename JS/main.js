@@ -45,7 +45,8 @@ let userData = JSON.parse(localStorage.getItem("userData"));
 let userName = document.querySelector("#user-name");
 
 if (userData && userName) {
-  userName.innerHTML += `Hello, ${userData.userName.split(" ").at(0)}`;
+  userName.innerHTML += `Hello, ${userData.username.split(" ").at(0)}`;
+  // console.log(userName);
 }
 
 let addTaskBtn = document.getElementById("add-task-btn");
